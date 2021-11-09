@@ -20,11 +20,10 @@
         <div class="container bg-light">
             <h1 class="text-center">Hello! This is an {{ welcome }}</h1>
             <ol class="list-group list-group-numbered">
-                <li class="list-group-item">A list item</li>
-                <li class="list-group-item">A list item</li>
-                <li class="list-group-item">A list item</li>
+                <li v-for="email in emailList" class="list-group-item"> {{email}} </li>
             </ol>
         </div>
     </main>
+    <script src="js/main.js"></script>
 </body>
 </html>

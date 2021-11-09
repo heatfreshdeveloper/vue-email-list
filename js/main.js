@@ -8,7 +8,8 @@ new Vue({
     emailList: []
   },
   methods: {
-    mounted() {
+    generateRandomEmail() {
+        console.log("sono dentro function")
         this.emailList = []
         for (let i = 0; i < 10; i++) {
     
@@ -18,5 +19,10 @@ new Vue({
               this.emailList.push(server.response);
             });
     }
+    }
+  }, 
+  mounted() {
+      console.log("Dentro mounted")
+      this.generateRandomEmail()
   }
 })
